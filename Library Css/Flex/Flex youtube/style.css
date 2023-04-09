@@ -1,0 +1,260 @@
+/*
+                    header Css
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.outer {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 20px;
+    position: fixed;
+    background-color: #fff;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.item nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+}
+
+i {
+    color: #333;
+}
+
+i.fa.fa-bars {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.item img {
+    margin: 0px 22px;
+    color: red;
+}
+#navigation{
+    display: none;
+}
+
+.item input {
+    outline: 1px gainsboro;
+    border: 1px solid gainsboro;
+    display: flex;
+    height: 28px;
+    border-radius: 11px;
+    padding: 10px 5px;
+    width: 300px;
+}
+
+.icons ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.icons li {
+    margin: 0px 10px;
+}
+
+/*
+                    sidebar
+*/
+.container_main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.container_nav {
+    margin-right: 35px;
+    flex-basis: 15%;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 25px 0px 0px;
+}
+.container_nav:hover {
+    overflow-y: scroll;
+    height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.nav_item {
+    border-bottom: 1px solid;
+    list-style-type: none;
+    padding: 10px 10px;
+}
+
+.nav_item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav_item i {
+    padding: 0px 10px;
+}
+
+.nav_item li {
+    padding: 10px 0px 0px 0px;
+}
+
+
+
+
+/* videos part */
+
+
+.container_videos {
+    display: flex;
+    margin-left: 205px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 83%;
+    align-content: flex-start;
+}
+.video_tabs {
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.video_tabs a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: #dddedf;
+    padding: 8px 15px;
+    margin: 5px 10px 5px 0px;
+    border-radius: 8px;
+}
+
+.video_tabs a:hover{
+color:  #dddedf;
+background:#333;
+}
+
+.video_items {
+    flex-grow: 1;
+    flex-basis: 30%;
+    margin: 15px 15px 0px 0px;
+    cursor: pointer;
+}
+
+.video_items img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.video_items h1{
+    color: #333;
+    font-size: 17px;
+    margin: 10px 0px 3px 0px;
+}
+.video_items p{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.tab_items {
+    margin: 15px auto;
+}
+div#search li {
+    list-style-type: none;
+    display: none;
+}
+.overlay{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: absolute;
+}
+i#mobSearch {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_videos{
+        flex-basis: 100%;
+        margin: 0px;
+    }
+    .container_nav{
+        display: none;
+    }
+    .video_items {
+        flex-basis: 100%;
+        margin: 15px 20px 0px 20px;
+    }
+    .tab_items {
+        margin: 12px auto;
+    }
+    #navigation{
+        display: block;
+    }
+    #navigationDesptop {
+        display: none;
+    }
+    .video_tabs{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    div#search li {
+        display: block;
+    }
+    .item input[type="search"]{
+        display: none;
+    }
+    .item input {
+        width: 165px;
+    }
+    i#mobSearch {
+        margin-left: 135px;
+        display: block;
+    }
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    background-color: black;
+    border: 1px solid red;
+    color: aliceblue;
+}
+.child1{
+    grid-area: nav;
+}
+.child2{
+    grid-area: first;
+}
+.child3{
+    grid-area: second;
+}
+.child4{
+    grid-area: third;
+}
+
+
+.child11{
+    grid-area: nav1;
+}
+.child21{
+    grid-area: first1;
+}
+.child31{
+    grid-area: second1;
+}
+.child41{
+    grid-area: third1;
+}
+.parent{
+    display: grid;
+    grid-template-areas:
+    'nav first first first first'
+    'nav first first first first'
+    'nav second second second second'
+    'nav second second second second'
+    'nav third third third third'
+    'nav third third third third';
+    gap: 10px;
+    padding: 10px;
+}
+
+.child{
+    display: grid;
+    grid-template-areas:
+    'nav1 first1 first1 first1 first1'
+    'nav1 first1 first1 first1 first1'
+    'nav1 second1 second1 second1 second1'
+    'nav1 second1 second1 second1 second1'
+    'nav1 third1 third1 third1 third1'
+    'nav1 third1 third1 third1 third1';
+    gap: 10px;
+    padding: 10px;
+}

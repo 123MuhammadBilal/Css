@@ -1,0 +1,36 @@
+body,html,li,h1,p{
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-size: 28px;
+}
+.center{
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    background: gray;
+}
+
+
+ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ul.c {
+    list-style-type: upper-roman;
+  }
+  
+  ul.d {
+    list-style-type: lower-alpha;
+  }
+
+  ul.e {
+    list-style-image: url('li.jpg');
+  }
+
+  

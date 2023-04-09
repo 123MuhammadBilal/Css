@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Width & Height</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Created a container whose width extends the lenght of browser having height of 200px</h1>
+    </div>
+
+
+    <div class="maxmin">
+        <h1>max & min width</h1>
+    </div>
+
+
+    <div class="container_check_width">
+        <p>if<br>div{<br>width:320px;<br>padding:10px;<br>border:5px solid gray;<br>}<br> then the container total = width:350px;<br><br><br></p>
+    </div>
+
+
+
+
+    <button onclick="onModal()">Modal</button>
+    <div id="modal" class="modal" >
+        <div class="modalContent">
+            <span onclick="onCross()">X</span>
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia illum, placeat quia in praesentium deserunt debitis? Saepe, sed facilis earum rerum magni totam ratione. A enim saepe nesciunt doloribus, atque quisquam sed sapiente alias, ducimus explicabo obcaecati? Animi ut non quo provident deleniti ratione neque temporibus, dignissimos omnis accusamus distinctio aut dolor voluptas pariatur aperiam velit? Dolor nemo cum earum est, laborum quam adipisci, quibusdam itaque consequuntur consequatur neque magnam quis repudiandae vero rem harum deleniti maxime corporis praesentium. In minus explicabo fuga itaque beatae aperiam perferendis reprehenderit asperiores eligendi nostrum, voluptatem, velit ut saepe aliquid voluptate nesciunt accusamus.</p>
+        </div>
+    </div>
+    <script>
+        const modal = document.getElementById('modal');
+        function onModal() {
+            modal.style.display = "block";
+        };
+        function onCross() {
+            modal.style.display='none';
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+         }
+        }
+    </script>
+</body>
+</html>

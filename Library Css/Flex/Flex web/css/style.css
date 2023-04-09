@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+.main_outer {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.container {
+    border-radius: 10px 0px 0px 10px;
+    max-width: 1200px;
+    margin: 55px 0px;
+    box-shadow: #8b8b8b80 0px 0px 10px 0px;
+    padding: 50px 0px;
+}
+.partners {
+    display: flex;
+    border-left: 4px solid gold;
+    align-items: center;
+}
+.partners_second_main{
+    display: flex;
+}
+.partners_first{
+    flex-basis: 60%;
+}
+.partners_first h1 {
+    background-color: #c4c4c4;
+    color: #000000;
+    font-size: 36px;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.partners_first p {
+    text-align: left;
+    float: left;
+    padding: 10px 27px;
+}
+.partners_second {
+    flex-basis: 40%;
+}
+.partners_imgs {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.partners_imgs img {
+    margin-top: 20px;
+    padding: 15px 19px 10px 19px;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.microsoftGold{
+    border-right: 3px solid #fabc16;
+}
+.partners_second h1 {
+    background-color: #fabc16;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding: 10px 0px;
+    letter-spacing: 7px;
+}
+.main_images{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab-outer{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.tab_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner_tabs {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.my_tabs{
+    background: #fabc16;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    place-content: space-around;
+} 
+.inner_tabs2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+.my_tabs2 {
+    margin: 0px;
+    flex-grow: 1;
+    padding: 4px;
+    height: 330px;
+}
+.tab2 {
+    height: 88%;
+    padding: 20px;
+    background: #fabc16;
+}

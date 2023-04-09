@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+div{
+    background-color: gray;
+    width: 800px;
+    margin: 0 auto;
+
+}
+.div1{
+    margin: 40px 111px ;
+}
+.div2{
+    margin: 40px 222px ;
+}
+.div3{
+    margin: 40px 333px ;
+}
+.div4{
+    margin: 40px 444px ;
+}
+
+
+    /* its normal margin */
+.margin {
+    margin-left: 276px;
+}
+    /* its margin inherit and it gets automatically same margin form parent  */
+.inherit{
+    margin: inherit;
+}
