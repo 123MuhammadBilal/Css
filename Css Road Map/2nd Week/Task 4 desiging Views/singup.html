@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="singup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singup</title>
+</head>
+
+<body>
+    <div class="form_bg">
+        <div class="form_container">
+            <form action="" method="post">
+                <h5 id="heading">Sing-Up Form</h5>
+                <input type="text" id="fname" placeholder="Enter First Name">
+                <input type="text" id="lname" placeholder="Enter Last Name">
+                <input type="text" id="emailorphone" placeholder="Enter Email or phone number"><br>
+                <br>
+                <label>
+                    Date of birth
+                </label>
+                <br>
+                <input type="date" placeholder="dd-mm-yyyy" min="1997-01-01" id="dateInput"><br>
+                <br>
+                <label>
+                    Gender
+                </label>
+        <div class="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="Custom">Custom</label>
+                <input type="radio" id="Custom" name="gender" value="Custom">
+        </div>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+     const dateInput = document.getElementById("dateInput");
+  const today = new Date();
+  const year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  if (month < 10) {
+    month = "0" + month;
+  }
+  let day = today.getDate();
+  if (day < 10) {
+    day = "0" + day;
+  }
+  const currentDate = year + "-" + month + "-" + day;
+  dateInput.setAttribute("max", currentDate);
+</script>
+</html>
