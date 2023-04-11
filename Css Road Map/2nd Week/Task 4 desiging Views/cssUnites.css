@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer{
+    float: left;
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 10px;
+    /* dynamic width and height based on content */
+    width: calc(min(100%, 400px));
+    height: calc(max(100px, 10vw));
+  }
+  div{
+    background-color: gray;
+    color: #000;
+    margin: 10px 0px;
+  }
