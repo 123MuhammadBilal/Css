@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div{
+    width: 50%;
+    background-color: gray;
+    columns: black;
+    margin: 20px auto;
+}
+
+div p{
+    background-color: yellow;
+    margin: 5px 0px;
+}
+.descendant p{
+    background-color: black;
+    color: green;
+}
+.child_selector > p{
+    background-color: green;
+    color: black;
+}
+
+/* //STYLING PESUDO CLASS */
+input[type="button"]:hover {
+    background-color: red;
+  }
+  input[type="button"]:active {
+    color: gray;
+  }
+  input[type="button"]:focus {
+    color: black;
+  }
+  a.class {
+    margin: 6px 0px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 1px 4px;
+    background: #efefef;
+    border: 1px solid #5e5c5c;
+    border-radius: 4px;
+}
+  a:visited{
+    color: purple;
+  }
+  input[type="button"]:enabled {
+    color: rgb(76, 0, 255);
+  }
+  input[type="button"]:disabled {
+    color: rgb(9, 49, 0);
+  }

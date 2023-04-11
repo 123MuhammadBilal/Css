@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+</head>
+<body>
+<div>
+    <p>type of combinators</p>
+    <ol>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selector (+)</li>
+        <li>genral sibling selector (~)</li>
+    </ol>
+</div>
+<div>
+    <p>How we can select all paragraphs in a container</p>
+    <p>we can select all paragraphs using the descendant selector</p>
+    <!-- i am traget to all paragraph using decendant selector-->
+
+</div>
+<div>
+    <p>how differ descendant and child selector</p>
+    <p><b>Descendant:</b>use space to select all childs in a element</p>
+    <!-- //example -->
+    <div class="descendant">
+        <!-- in the descendant we can select all paragraphs from parent -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        <div class="test">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+    </div>
+    <p><b>Child selector:</b>use > to select all childs in a specific element</p>
+    <div class="child_selector">
+        <!-- in the descendant we can select all paragraphs from parent -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        <div class="test">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quibusdam!</p>
+        <br>
+</div>
+<!-- //assingment -->
+
+<div>
+    <h5>--------------------------------------</h5>
+    <h5>Write down syntax for pseudo class. What are few pseudo states for a button?</h5>
+    <pre>
+Some of the pseudo-states for a button are:
+
+:hover
+:active
+:focus
+:visited
+:enabled
+:disabled
+    </pre>
+    <b><br>syntax:<br><br>class:selector {<br>
+        <----Styling --><br>
+    }</br></b></b>
+    <br>
+    <a href="https://www.google.com"><input type="button" value="PSEUDO CLASSES" endable></a>
+    <a href="https://www.google.com"><input type="button" value="PSEUDO CLASSES" disabled></a>
+    <a href="https://www.google.com"><input type="button" value="PSEUDO CLASSES" ></a>
+    <a href="https://www.google.com" class="class">PSEUDE CLASSES</a>
+</div>
+</body>
+</html>

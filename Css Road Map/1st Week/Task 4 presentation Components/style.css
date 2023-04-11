@@ -1,0 +1,106 @@
+body,html,li,h1,p{
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-size: 28px;
+}
+.center{
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    background: gray;
+}
+
+
+ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ul.c {
+    list-style-type: upper-roman;
+  }
+  
+  ul.d {
+    list-style-type: lower-alpha;
+  }
+
+  ul.e {
+    list-style-image: url('li.jpg');
+  }
+
+  
+  a:hover{
+    color: green;
+    background-color: black;
+  }
+  a:visited{
+    color: purple;
+    background-color: green;
+  }
+  a:focus{
+    color: yellow;
+    background-color: red;
+  }
+  a:hover{
+    color: wheat;
+    background-color: green;
+  }
+  a:active{
+    color: black;
+    background-color: yellow;
+  }
+
+
+  .table_responsive{
+    background-color: azure;
+    color: #000000;
+    width: 100%;
+    overflow-x:auto;
+  }
+  .table_responsive table{
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+
+  .table_responsive tr,th,td{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  .table_responsive tr:nth-child(even){
+    background-color: #959595;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    table, tr, td, th {
+      display: block;
+      border: 0px solid;
+    }
+    tbody{
+      border: 0px solid;
+    }
+    td:nth-of-type(1):before {
+      content: "Country =>";
+    }
+    
+    td:nth-of-type(2):before {
+      content: "District =>";
+    }
+    
+    td:nth-of-type(3):before {
+      content: "City =>";
+    }
+    td:nth-of-type(4):before {
+      content: "Name =>";
+    }
+    
+  }
